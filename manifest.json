@@ -1,0 +1,14 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Justin Prime Narrator",
+  "name_for_model": "prime_narrator",
+  "description_for_model": "Injects mythic narrative reflections after ChatGPT actions.",
+  "auth": { "type": "none" },
+  "api": {
+    "type": "openapi",
+    "url": "https://your-domain.vercel.app/openapi.yaml"
+  },
+  "logo_url": "https://your-domain.vercel.app/icon.png",
+  "contact_email": "support@yourdomain.com",
+  "legal_info_url": "https://your-domain.vercel.app/legal"
+}
