@@ -1,0 +1,36 @@
+openapi: 3.0.1
+info:
+  title: Justin Prime Narrator API
+  description: API for Justin Prime Narrator plugin
+  version: "1.0.0"
+servers:
+  - url: https://your-domain.vercel.app
+paths:
+  /prime/reflection:
+    post:
+      summary: Get narrative reflection
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                task:
+                  type: string
+              required:
+                - task
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  reflection:
+                    type: string
+                  alignment:
+                    type: number
+                  semantic_frame:
+                    type: string
